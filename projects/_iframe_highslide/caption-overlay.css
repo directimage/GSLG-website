@@ -1,0 +1,41 @@
+@font-face {
+	font-family:'GSverdana';
+	src: url('../../fonts/Vverdana.eot');
+	src: url('../../fonts/Vverdana.eot?#iefix') format('embedded-opentype'),
+		 url('../../fonts/Vverdana.woff') format('woff'),
+		 url('../../fonts/Vverdana.ttf') format('truetype'),
+		 url('../../fonts/Vverdana.svg#GSverdana') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family:'GSverdana';
+	src: url('../../fonts/Vverdana-Bold.eot');
+	src: url('../../fonts/Vverdana-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Vverdana-Bold.woff') format('woff'),
+		url('../../fonts/Vverdana-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GSverdana';
+	src: url('../../fonts/Vverdana-Italic.eot');
+	src: url('../../fonts/Vverdana-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Vverdana-Italic.woff') format('woff'),
+		url('../../fonts/Vverdana-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+.overlay-box {
+	font-family: 'GSverdana','Verdana','Arial','Helvetica', sans-serif;
+	font-size: 16px !important;
+	letter-spacing: 0.4px;
+	text-align: center;
+	opacity: 0.8;
+	background: black;
+	color: white; 
+	margin: 10px 10px; 
+	padding: 5px 10px;
+	border-radius: 5px;
+	white-space: nowrap !important;
+}
