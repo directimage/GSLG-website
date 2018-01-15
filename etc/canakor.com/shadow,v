@@ -1,0 +1,54 @@
+head	1.3;
+access;
+symbols;
+locks
+	gsligh5:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2016.10.14.18.23.31;	author gsligh5;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2016.10.14.18.08.50;	author gsligh5;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2016.10.14.18.08.50;	author gsligh5;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@dgross:$1$yORYUZa3$PaxkcgYQLB0yqrMKX2RJ6.:17088::::::
+leolee:$1$v7CCmGdo$9g06aaluUle8jdtbn4io1/:17088::::::
+@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d2 1
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@
