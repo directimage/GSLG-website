@@ -993,6 +993,9 @@ h2 {
 .WACband {
 	background: #FFFF80;
 }
+.pureedgeband {
+	background: #9ae293;
+}
 .brandtableflag {
 	text-align: right;
 	white-space: nowrap;
@@ -1014,11 +1017,13 @@ h2 {
 	max-width: 182px;
 	max-height: 74px;
 }
-.brandtablebandlogo {
+.brandtablebandlogo img{
+	display: block;
+	padding-left: 10px;
+	max-width: 162px;
+	max-height: 74px;
 	text-align: left;
 	line-height: 0;
-	padding: 0;
-	padding-left: 10px;
 }
 .brandtabletext{
 	color: #808285;
