@@ -292,7 +292,7 @@ h2 {
 	margin-top: 20px;
 }
 #logobanner img{
-	margin-right: 12px;
+	margin-right: 25px;
 	margin-bottom: 11px;
 }
 
@@ -1641,11 +1641,10 @@ table.newproducts {
 /* Contact CSS */
 /*------------------------------------------------------------------------------------------------------------------------*/
 .contacttext{
-	margin-top: -6px;
 	font-size: 16px;
-	letter-spacing: .02em;
 	line-height: 22px;
 	float: left;
+	margin-right: 36px;
 }
 .contacttext a{
 	color: #000FD2;
@@ -1661,28 +1660,28 @@ table.newproducts {
 .contacts {
 	font-size: 15px;
 	line-height: 21px;
+	margin-right: 0;
+	margin-bottom: 20px;
 }
-#page-right {
-	float: right;
-	width: 694px;
+.mapsbox {
+	float: left;
+	width: 300px;
+	margin-bottom: 20px;
 }
 .map{
-	width: 332px;
-	height: 302px;
+	width: 270px;
+	height: 246px;
 	border: 1px solid #808285;
 	float: left;
 }
 .map2{
-	float: right;
-	margin: 0;
+	margin-top: 12px;
 }
 .map2 img{
 	width:100%;
 }
 #contactslide {
-	margin-top: 22px;
-	width: 100%;
-	height: 394px;
+	float: left;
 }
 #contactslide img {
 	position: absolute;
