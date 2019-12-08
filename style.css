@@ -985,25 +985,16 @@ h2 {
 	background: #FFEF80;
 }
 .hunzaband { 
-	background: #d9d9d9;
-}
-.isaacband { 
-	background: #78b0c6;
+	background: #f7c2a4;
 }
 .metalumenband { 
 	background: #A6EEFF;
 }
 .peerlessband { 
-	background: #ABF8A8;
-}
-.SPIband { 
-	background: #C2E0FF;
+	background: rgb(182, 182, 182);
 }
 .WACband {
 	background: #FFFF80;
-}
-.pureedgeband {
-	background: #9ae293;
 }
 .brandtableflag {
 	text-align: right;
