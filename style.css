@@ -285,14 +285,14 @@ h2 {
 #logobanner {
 	font-size: 1px;
 	line-height: 0px;
-	width: 1006px;
+	width: 1010px;
 	text-align: justify;
 	-moz-text-align-last: right;
 	position: relative;
 	margin-top: 20px;
 }
 #logobanner img{
-	margin-right: 25px;
+	margin-right: 16px;
 	margin-bottom: 11px;
 }
 
