@@ -287,7 +287,7 @@ h2 {
 	line-height: 0px;
 	width: 1010px;
 	text-align: justify;
-	-moz-text-align-last: right;
+	text-align-last: center;
 	position: relative;
 	margin-top: 20px;
 }
