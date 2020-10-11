@@ -285,14 +285,14 @@ h2 {
 #logobanner {
 	font-size: 1px;
 	line-height: 0px;
-	width: 1010px;
+	width: 1004px;
 	text-align: justify;
-	text-align-last: center;
+	text-align-last: justify;
 	position: relative;
 	margin-top: 20px;
 }
 #logobanner img{
-	margin-right: 16px;
+	margin-right: 10px;
 	margin-bottom: 11px;
 }
 
@@ -848,14 +848,22 @@ h2 {
 	margin-top: 34px;'
 }
 .welcome {
-    border:6px solid #C5C5C5; 
-    margin-bottom:25px; 
-    padding:15px 5px; 
+    border:6px solid #00ac08ab; 
+		margin-bottom:18px;
+		padding: 15px 5px 4px;
     box-sizing: border-box; 
-    text-align:center;
+    text-align:center; 
+		font-size:17px;
 }
 .welcome a{
     color: #000FD2;
+}
+.welcome p {
+  margin-bottom:12px;
+  line-height: 22px;
+}
+.hiring {
+	margin-bottom: 22px; padding-bottom: 15px; border: 6px solid #8F98FF;
 }
 /*------------------------------------------------------------------------------------------------------------------------*/
 /* Services Page CSS */
@@ -1637,11 +1645,15 @@ table.newproducts {
 /*------------------------------------------------------------------------------------------------------------------------*/
 /* Contact CSS */
 /*------------------------------------------------------------------------------------------------------------------------*/
+.content-medium{
+	width: 1130px;
+}
 .contacttext{
 	font-size: 16px;
 	line-height: 22px;
 	float: left;
-	margin-right: 36px;
+	margin-right: 30px;
+	height: 426px;
 }
 .contacttext a{
 	color: #000FD2;
@@ -1660,6 +1672,10 @@ table.newproducts {
 	margin-right: 0;
 	margin-bottom: 20px;
 }
+.contacts span {
+	line-height: 23px;
+	font-family: 'Open Sans', sans-serif;
+}
 .mapsbox {
 	float: left;
 	width: 300px;
@@ -1674,7 +1690,7 @@ table.newproducts {
 .map2{
 	margin-top: 12px;
 }
-.map2 img{
+.map img{
 	width:100%;
 }
 #contactslide {
@@ -1684,7 +1700,8 @@ table.newproducts {
 	position: absolute;
 	z-index: 8;
 	opacity: 0;
-	width: 694px;
+	width: 826px;
+	height: 507px;
 }
 #contactslide img.active {
     z-index: 10;
