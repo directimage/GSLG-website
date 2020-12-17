@@ -1645,24 +1645,23 @@ table.newproducts {
 /*------------------------------------------------------------------------------------------------------------------------*/
 /* Contact CSS */
 /*------------------------------------------------------------------------------------------------------------------------*/
-.content-medium{
-	width: 1130px;
+.content-addWidth{
+	width: 1024px;
 }
 .contacttext{
 	font-size: 16px;
 	line-height: 22px;
 	float: left;
-	margin-right: 30px;
-	height: 426px;
+	margin-right: 8px;
 }
 .contacttext a{
 	color: #000FD2;
 }
 .contacttext p{
 	margin-top: 1em;
+	width: 241px;
 }
 #phone {
-	color: #000FD2;
 	margin-top: 4px;
 	margin-bottom: 15px;
 }
@@ -1673,17 +1672,16 @@ table.newproducts {
 	margin-bottom: 20px;
 }
 .contacts span {
-	line-height: 23px;
 	font-family: 'Open Sans', sans-serif;
 }
 .mapsbox {
 	float: left;
-	width: 300px;
+	width: 250px;
 	margin-bottom: 20px;
 }
 .map{
-	width: 270px;
-	height: 246px;
+	width: 232px;
+	height: 211px;
 	border: 1px solid #808285;
 	float: left;
 }
@@ -1700,8 +1698,7 @@ table.newproducts {
 	position: absolute;
 	z-index: 8;
 	opacity: 0;
-	width: 826px;
-	height: 507px;
+	width: 726px;
 }
 #contactslide img.active {
     z-index: 10;
