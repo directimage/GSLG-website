@@ -1,285 +1,901 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
-<head>
-	<title>GS Lighting Group &#124; LED Lighting Representative</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="A leading lighting service company in Ontario, representing select manufacturers specializing in LED lighting products for any professional application." />
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	<link href="highslide-spotlight/highslide.css" rel="stylesheet" type="text/css" />
-	<link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'/>
-	<script src="scripts/jquery-1.11.1.min.js" type="text/javascript"></script>
-	<script src="scripts/openfile.js" type="text/javascript"></script>
-	<script src="scripts/setActiveMenu.js" type="text/javascript"></script>
-	<script src="scripts/home-slideshow.js" type="text/javascript"></script>
-	<script src="highslide-spotlight/highslide-full.js" type="text/javascript"></script>
-	<script src="highslide-spotlight/highslide.config.js" type="text/javascript" charset="utf-8"></script>
-</head>
-<body>
-	<div id="preloader">
-		<img src="images/signup-button-in.png"/>
-		<img src="images/video-button-in.png"/>
-	</div>
-	<div id="header">
-		<!--writes in the menu from header.html-->
-		<script type="text/javascript">writeFile("global-html/header.html")</script>
-		<!--makes a button active-->
-		<script type="text/javascript">setActive('up', '0', 'menu-button menu-active')</script>
-	</div>
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <title>GS Lighting Group | LED Lighting & Controls</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A leading lighting service company in Ontario, representing select manufacturers specializing in LED lighting products for any professional application.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="scripts/openfile.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid fixed-top header">
+      <div class="row">
+        <div class="col text-center logo-flex">
+          <img class="medallion above-logo" src="images/global/Celebrating30Years-medallion.png">
+          <img class="logo" src="images/global/GSheader-logo.svg">
+          <img class="medallion" src="images/global/Celebrating30Years-medallion.png">
+        </div>
+        <div class="col px-0 nav-glow">
+          <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="images/global/menu-icon.svg">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2 active">
+                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Company<span class="sr-only">(current)</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="about-us.html">About Us</a>
+                    <a class="dropdown-item" href="team.html">Meet the Team</a>
+                    <a class="dropdown-item" href="services.html">Services</a>
+                    <a class="dropdown-item" href="trending.html">#Trending</a>
+                  </div>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="line-card.html">Line Card</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="retrofit.html">Retrofit</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="inspiration.html">Inspiration</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="design-eCats.html">Design eCats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Slideshow-->
+    <div class="container-fluid p-0">
+      <div id="fullPageSlides" class="carousel slide carousel-fade slides-top-margin" data-ride="carousel" data-pause="false" data-interval="3750">
+        <ol class="carousel-indicators">
+          <li data-target="#fullPageSlides" data-slide-to="0"></li>
+          <li data-target="#fullPageSlides" data-slide-to="1"></li>
+          <li data-target="#fullPageSlides" data-slide-to="2"></li>
+          <li data-target="#fullPageSlides" data-slide-to="3"></li>
+          <li data-target="#fullPageSlides" data-slide-to="4"></li>
+          <li data-target="#fullPageSlides" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item homeSlide" style="background-image: url('images/home/slideshow/metalumen-BlackCables.jpg')">
+            <div class="carousel-caption d-none d-md-block align-middle">
+              GS Lighting Group is proud to be celebrating 30 years in business
+            </div>
+            <div class="manufacturer">
+              Metalumen&colon; RM2DU
+            </div>
+            <div class="info-band">
+            </div>
+          </div>
+          <div class="carousel-item homeSlide" style="background-image: url('images/home/slideshow/Arancia-Sin2-S2202.jpg')">
+            <div class="carousel-caption d-none d-md-block align-middle">
+              Contact your GS Lighting representative to learn about our Educational Series of webinars
+            </div>
+            <div class="manufacturer">
+              Arancia&colon; Sin 2 - S2202
+            </div>
+            <div class="info-band">
+            </div>
+          </div>
+          <div class="carousel-item homeSlide" style="background-image: url('images/home/slideshow/GE-365DisinFX-LBU-Series.jpg')">
+            <div class="carousel-caption d-none d-md-block align-middle">
+              Learn about our UV lighting technology that kills bacteria and viruses such as Covid
+            </div>
+            <div class="manufacturer">
+              GE Current&colon; 365DisInFx
+            </div>
+            <div class="info-band">
+            </div>
+          </div>
+          <div class="carousel-item homeSlide" style="background-image: url('images/home/slideshow/Peerless-Arclux-LDXI.jpg')">
+            <div class="carousel-caption d-none d-md-block align-middle">
+              GS Lighting Group is proud to be supporting the Canadian lighting industry
+            </div>
+            <div class="manufacturer">
+              Peerless&colon; Arclux - LDXI
+            </div>
+            <div class="info-band">
+            </div>
+          </div>
+          <div class="carousel-item homeSlide" style="background-image: url('images/home/slideshow/SPI-Pavo4.jpg')">
+            <div class="carousel-caption d-none d-md-block align-middle">
+              GS Lighting Group offers in house AGI 32 design support
+            </div>
+            <div class="manufacturer">
+              SPI Lighting&colon; Pavo 4
+            </div>
+            <div class="info-band">
+            </div>
+          </div>
+          <div class="carousel-item homeSlide" style="background-image: url('images/home/slideshow/litecontrol-60L.jpg')">
+            <div class="carousel-caption d-none d-md-block align-middle">
+              Small-scale recessed perimeter luminaire for wall grazing applications
+            </div>
+            <div class="manufacturer">
+              Litecontrol&colon; 60L
+            </div>
+            <div class="info-band">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#fullPageSlides" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#fullPageSlides" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- End of Slideshow-->
 
-	<div class="new_content_wide">
-		<div class="homebg">
-			<div class="divider_line grad1" style="top:25px;">
-			</div>
-		</div>
+    <!--Start of Featured Slider Section-->
+    <div class="container p-xl-0">
 
-		<div class="new_content">
-			<div class="homeslide_container">
-				<div id="homeslide">
-					<div class="active">
-						<img src="images/homeslide/guelph-health-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/guelph-health2-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/guelph-health3-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/mammoet-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/mammoet2-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/sausage-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/masri-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/masri2-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/guelph-hyundai-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/CAS-lounge-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/CAS-meetingroom-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/cambridge-pl-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/kitchener-library-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/kitchener-homeslide.jpg" alt="" />
-					</div>
-					<div>
-						<img src="images/homeslide/bruce-hotel-homeslide.jpg" alt="" />
-					</div>
-				</div>
-				<div class="overlaytext">
-					<span style="color:#FF0000;">&bull;</span>LED Lighting&thinsp;<br>
-					<span style="color:#00FF00;">&bull;</span>Lighting Controls&thinsp;<br>
-					<span style="color:#0000FF;">&bull;</span>Integrated Solutions&thinsp;
-				</div>
-			</div>
+      <!-- Start of Featured slider Desktop-->  
+      <div id="featuredItemsSlider" class="carousel slide d-none d-md-block mt-36" data-ride="carousel" data-pause="false" data-interval="4500">
+        <div class="carousel-inner">
+          <!--Slide 1--> <!--logo + product image = 336px maximum total-->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <div class="feature">
+                  <a href="https://www.hubbell.com/hubbellindustriallighting/en/Products/Lighting-Controls/Industrial-Lighting/Enclosed-Gasketed/Triple-H/p/2056668" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/hubbell.png" width="115" class="img-fluid pr-2" alt="Hubbell logo">
+                        <div class="itemName mt-2 mt-lg-4">
+                          Triple H
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/hub-triple-h.jpg" width="230" class="img-fluid" alt="Hubbell Triple H fixture">
+                      </div>
+                    </div>
+                    <div>
+                      The Triple H is a wet location low bay or high bay that is rated for a full 65°C, no excuses. Ranging from 15,000 lumens to 60,000 lumens, it is a great replacement fixture&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="https://www.metalumen.com/intelligent_luminaires/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/metalumen-v.png" width="175" class="img-fluid pr-2" alt="Metalumen logo">
+                        <div class="itemName mt-2 mb-1">
+                          Intelligent Luminaires
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/metalumen-intelligent.jpg" width="200" class="img-fluid" alt="Metalumen image">
+                      </div>
+                    </div>
+                    <div>
+                      Metalumen offers intelligent standalone luminaires with integrated occupancy and/or daylight harvesting capabilities. Standalone luminaires offer independent control based on integrated sensors&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="http://arancialighting.com/project/drum-surface/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/arancia-logo.png" width="70" class="img-fluid pr-2" alt="Arancia logo">
+                        <div class="itemName mt-2">
+                          Drum
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/arancia-drum-c82.png" width="234" class="img-fluid" alt="Arancia Drum fixture">
+                      </div>
+                    </div>
+                    <div>
+                      This direct and bright luminaire is available in three different sizes and offers many color combinations. Bent extruded shade and spinned reflector made of 6061-T6 aluminum. 2700K &hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Slide 1-->
 
-			<div class="slidetext_container">
-				<div id="slidetext">
-					<div class="active">
-						<h1>Who We Are</h1><br />
-						<p>GS Lighting Group is a leading lighting service company representing lighting manufacturers to the design, engineering, distribution and contracting communities.</p>
-						<p>Our focus is in Architectural Lighting Systems for the commercial, education, healthcare, athletic, industrial and residential markets.</p>
-						
-					</div>
-					<div>
-						<h1>History</h1><br />
-						<p>GS Lighting Group was established in 1990 with a focus on improving any space with the use of indirect lighting. Today, we are a leading manufacturer’s representative in the lighting industry. We’re continually linking lighting applications with quality lighting from leading manufactures, with design and architectural intent.</p>
-						
-					</div>
-					<div>
-						<h1>Mission Statement</h1><br />
-						<p>GS Lighting Group is committed to providing our customers with unparalleled support and the highest possible level of service in our pursuit of business excellence. Our goal is to help inspire creativity by offering the highest quality lighting products that meet the requirements of virtually any project.</p>
-						<p><i>"Everyone has the right to quality light"</i></p>
-						
-					</div>
-					<div>
-						<h1>Vision</h1><br />
-						<p>GS Lighting Group is a lighting agency that envisions a brighter and more energy efficient future.</p>
-						<p>The last two decades have seen many changes in the lighting industry, but our vision to improve an environment with light still remains our focus.</p>
-					</div>
-				</div>
-				<div id="slide-buttons">
-					 <a class="slide-button active"></a>
-					 <a class="slide-button"></a>
-					 <a class="slide-button"></a>
-					 <a class="slide-button"></a>   
-				</div>
-			</div>
+          <!--Slide 2--> <!--logo + product image = 336px maximum total-->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <div class="feature">
+                  <a href="https://www.hubbell.com/architecturalarealighting/en/Products/Lighting-Controls/Commercial-Outdoor-Lighting/Area-Site-Roadway/Flex/p/220804" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/aal.png" width="136" class="img-fluid pr-2" alt="Architectural Area Lighting logo">
+                        <div class="itemName mt-3 mt-lg-4">
+                          Flex
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/aal-flex.jpg" width="200" class="img-fluid" alt="Architectural Area Lighting Flex fixture">
+                      </div>
+                    </div>
+                    <div>
+                      Timeless Sleek contemporary styling that will stand the test of time. Multiple arm designs and mounting options, including single, twin,&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="https://products.gecurrent.com/indoor-lighting/disinfection/lbu-series" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/GEcurrent-fixtures.jpg" width="146" class="img-fluid pr-2" alt="GE Current logo">
+                        <div class="itemName mt-2 mt-lg-4">
+                          365DisInFx LBU
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/ge-365DisInFx-LBU.jpg" width="190" class="img-fluid" alt="GE Current LBU fixture">
+                      </div>
+                    </div>
+                    <div>
+                      365DisInFx™ UVC technology provides 99% inactivation with less than 6 hours of exposure for seasonal coronaviruses, including SARS-CoV-2, the virus that is known to cause COVID-19&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="https://www.hubbell.com/kimlighting/en/Products/Lighting-Controls/Lighting-Controls-Sensors/Pharos/Pharos/p/7277334" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/kim.png" width="95" class="img-fluid pr-2" alt="Kim Lighting logo">
+                        <div class="itemName mt-xl-3 mt-2">
+                          Lighting Controls
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/kim-dmx-controls.png" width="160" class="img-fluid" alt="Kim Lighting DMX controls">
+                      </div>
+                    </div>
+                    <div>
+                      Allows for individually controlling and independently running timeline and scenes. Users can build dynamic, precise, fully customizable lighting effects. Real-time manual overrides&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Slide 2-->
 
-			<div class="featured_items_container">
-				<div id="featured_items">
-					<a href="#" onclick="return hs.htmlExpand(this, {width: '916'} )"><span>&bull;&thinsp;</span>Featured Project Spotlight</a><br>
-					<div class="highslide-maincontent">
-						<div class="spotlight-window-height">
-							<script type="text/javascript">writeFile("spotlight/spotlight-February-2016.html")</script>
-						</div>
-					</div>
+          <!--Slide 3--> <!--logo + product image = 336px maximum total-->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <div class="feature">
+                  <a href="https://www.hubbell.com/hubbelllightingci/en/spectraclean-254" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/columbia.jpg" width="136" class="img-fluid pr-2" alt="Columbia Lighting logo">
+                        <div class="itemName mt-3 mt-lg-4">
+                          Spectraclean 254
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/columbia-spectraclean254.jpg" width="170" class="img-fluid" alt="Columbia Spectraclean fixture">
+                      </div>
+                    </div>
+                    <div>
+                      New SpectraClean™ 254 germicidal lighting solutions are fast, effective and indiscriminate for disinfecting bacteria and inactivating viruses like SARS-CoV-2 (Coronavirus) and Influenza (Flu)&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="https://products.gecurrent.com/indoor-lighting/disinfection/lbu-series" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/emergi-lite.png" width="150" class="img-fluid pr-2" alt="Emergi-Lite logo">
+                        <div class="itemName mt-2 mt-lg-4">
+                          CM Edge
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/emergilite-CM-Edge.jpg" width="160" class="img-fluid" alt="Emergi-Lite CM Edge fixture">
+                      </div>
+                    </div>
+                    <div>
+                      Aluminum frame and polycarbonate panels illuminated by high efficiency LEDs. Universal side, wall and ceiling mount. Universal single and double face. 3 pictogram panels included&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="http://www.metalumen.com/bios/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/metalumen-v.png" width="136" class="img-fluid pr-2" alt="Kim Lighting logo">
+                        <div class="itemName mt-xl-3 mt-2">
+                          BIOS Skyblue
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/metalumen-bios.jpg" width="200" class="img-fluid" alt="Kim Lighting DMX controls">
+                      </div>
+                    </div>
+                    <div>
+                      Metalumen indoor lighting with BIOS® technology offers healthy lighting solutions that bring the benefits of sunlight indoors. BIOS SkyBlue® provides the right “blue sky” spectrum of light&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Slide 3-->
 
-					<a href="#" onclick="return hs.htmlExpand(this, {width: '458'} )"><span>&bull;&thinsp;</span>Featured Project Spotlight Archive</a><br>
-					<div class="highslide-maincontent">
-						<div style="overflow: hidden">
-							<script type="text/javascript">writeFile("spotlight-archive.html")</script>
-						</div>
-					</div>
+          <!--Slide 4--> <!--logo + product image = 336px maximum total-->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <div class="feature">
+                  <a href="https://products.gecurrent.com/led-lamps-and-modules/led-hazardous-location-lamps" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/GEcurrent-lamps.jpg" width="138" class="img-fluid pr-2" alt="GE Current Lamps">
+                        <div class="itemName mt-3 mt-lg-4">
+                          Hazardous Location Lamps
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/GE-hazardous-lamp.jpg" width="65" class="img-fluid" alt="GE Current Hazardous Lamp">
+                      </div>
+                    </div>
+                    <div>
+                      Our new Type B LED HID replacement lamps, suited for Hazardous locations, feature ANSI ED17 shape and are offered in 21, 35 and 45 watts. &hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="https://www.lumca.com/wp-content/uploads/2018/01/Luuma_X_Fog_Brochure_EN.pdf" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/global/logo-banner/lumca.png" width="150" class="img-fluid pr-2" alt="Lumca Lighting logo">
+                        <div class="itemName mt-2 mt-lg-4">
+                          Luuma X Fog LU-AR
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/lumca-lu-ar.jpg" width="130" class="img-fluid" alt="Lumca Luuma LU-AR fixture">
+                      </div>
+                    </div>
+                    <div>
+                      Combining both theatrical fog eff ects and a new way for outdoor cooling, Luuma X Fog is ideal for urban parks, botanical gardens and other recreational areas&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="feature">
+                  <a href="https://www.spilighting.com/Family/novato-lines-and-arcs/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/global/logo-banner/spi-lighting.jpg" width="140" class="img-fluid pr-2" alt="SPI Lighting logo">
+                        <div class="itemName mt-xl-3 mt-2">
+                          Novato Lines &plus; Arcs
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/SPI-novato-lines.jpg" width="180" class="img-fluid" alt="SPI Novato Lines and Arcs">
+                      </div>
+                    </div>
+                    <div>
+                      These architectural building blocks are fundamental design tools that enable endless expression of your lighting ideas to meet specific customer requirements.&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Slide 4-->
 
-					<a href="#" onclick="hs.htmlExpand(this, {width: '480'} );"><span>&bull;&thinsp;</span>View our Current Newsletters</a><br>
-					<div class="highslide-maincontent" >
-						<div style="overflow: visible;">
-							<script type="text/javascript">writeFile("newsletters.html")</script>
-						</div>
-					</div>
+        </div>
+        <a class="carousel-control-prev featured-controls" href="#featuredItemsSlider" role="button" data-slide="prev">
+          <span class="featured-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next featured-controls" href="#featuredItemsSlider" role="button" data-slide="next">
+          <span class="featured-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- End of Featured slider Desktop-->
 
-					<a href="#" onclick="hs.htmlExpand(this, {width: '656', height: '800'} );"><span>&bull;&thinsp;</span>Product Information Literature</a><br>
-					<div class="highslide-maincontent" >
-						<div id="literature">
-							<div class="literature-covers">
-								<a href="https://online.fliphtml5.com/eshq/ymmn/" target="blank">
-									<img src="images/product_literature/ge-lamps-guide.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="https://online.fliphtml5.com/eshq/tqdo" target="blank">
-									<img src="images/product_literature/May-2020-Product-Guide-Cover.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/GSLG-LineCard-Nov-2020.pdf" target="blank">
-									<img src="images/product_literature/GSLG-LineCardCover-Nov-2020.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/GSLG_CompanyOverview-web-LR.pdf" target="blank">
-									<img src="images/product_literature/company-overview.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/EurekaLEDProductSummary.pdf" target="blank">
-									<img src="images/product_literature/eureka-cover.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/GEFixtureGuideCover.pdf" target="blank">
-									<img src="images/product_literature/ge-cover.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/MetalumenLEDPS.pdf" target="blank">
-									<img src="images/product_literature/metalumen-cover.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/PeerlessLEDPS.pdf" target="blank">
-									<img src="images/product_literature/peerless-cover.jpg">
-								</a>
-							</div>
-							<div class="literature-covers">
-								<a href="images/product_literature/SPILEDPS.pdf" target="blank">
-									<img src="images/product_literature/spi-cover.jpg">
-								</a>
-							</div>
-							<div class="cover-space">
-							</div>
-							<div class="cover-space">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="feature-buttons">
-					<a href="http://conta.cc/27Hkhxb" target="_blank">
-						<div class="video-button">
-						</div>
-					</a>	
-					<div class="button-text">
-						View our selection of recommended product videos.
-					</div>
-				</div>
-				<div style="clear:both;"></div>
-				<div class="feature-buttons">
-					<a href="#" onclick="hs.htmlExpand(this, {width: '580'} );" id="primaryButton">
-						<div class="signup-button">
-						</div>
-					</a>
-					<div class="highslide-maincontent" >
-					<div style="overflow: visible;">
-						<script type="text/javascript">writeFile("newsletter-form.php")</script>
-					</div>
-					</div>
-					<div class="button-text">
-						Receive our monthly newsletter for the latest in lighting news.
-					</div>
-				</div>
-				<div style="clear:both;"></div>
-			</div>
-		</div>
-	</div>
-	<div class="new_content welcome">
-		<div>
-			NEW! Order all your GE replacement lamp and ballast supplies through our GE Lamps Division.<br>
-			GE Current Lamps and Ballast: <a href="mailto:gelamps@gslightinggroup.ca?Subject=Request for GE Lamps Product Information">gelamps@gslightinggroup.ca</a>
-			&ensp;or call: 1-833-GE-LAMPS or 1-833-435-2677
-		</div>
-			<div style="margin: 6px 0 12px 0;">
-				Click to view: <a href="https://online.fliphtml5.com/eshq/ymmn" target="blank">GE Lamp &amp; Ballast Catalogue</a>
-			</div>
-		<p style="line-height: 26px;">
-			Fixtures & Controls: 519-267-6262<br>
-			Sales Enquiries: <a href="mailto:sales@gslightinggroup.ca?Subject=Request for product support or meeting">sales@gslightinggroup.ca</a><br>
-			Quotation Enquiries: <a href="mailto:quotations@gslightinggroup.ca?Subject=Request for pricing or quotation">quotations@gslightinggroup.ca</a><br>
-			Orders: <a href="mailto:orders@gslightinggroup.ca?Subject=Request for order information">orders@gslightinggroup.ca</a>
-    </p>
-    <p>
-			Check out our new <a href="retrofits.html?up=3">LED Retrofit Division</a>, complete with a professional lighting and energy
-      sales support team.
-    </p>
-	</div>
-	<div class="new_content welcome hiring">
-		Employment Enquiries: <a href="mailto:employment@gslightinggroup.ca" target="blank">employment@gslightinggroup.ca</a>
-	</div>
+      <!-- Start of Featured Slider Mobile-->
+      <!-- To create individual slides for mobile, <a> contents from slides above remains the same format as <a> content below. Set content between "carousel-item" and "feature-mobile" classed divs -->
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div id="featuredItemsSlider-mobile" class="carousel slide d-md-none" data-ride="carousel" data-pause="false" data-interval="3500">
+            <div class="carousel-inner">
 
-	<div class="divider_line grad1">
-	</div>
+              <!--Slide 1-->
+              <div class="carousel-item active">
+                <div class="feature-mobile">
+                  <a href="https://www.hubbell.com/hubbellindustriallighting/en/Products/Lighting-Controls/Industrial-Lighting/Enclosed-Gasketed/Triple-H/p/2056668" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/hubbell.png" width="130" class="img-fluid pr-2" alt="Hubbell logo">
+                        <div class="itemName mt-4 mt-md-2 mt-lg-4">
+                          Triple H
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/hub-triple-h.jpg" width="270" class="img-fluid" alt="Hubbell Triple H fixture">
+                      </div>
+                    </div>
+                    <div>
+                      The Triple H is a wet location low bay or high bay that is rated for a full 65°C, no excuses. Ranging from 15,000 lumens to 60,000 lumens, it is a great replacement fixture&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
-	<script type="text/javascript">writeFile("global-html/GSAL-logobanner.html")</script>
+              <!--Slide 2-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://www.metalumen.com/intelligent_luminaires/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/metalumen-v.png" width="175" class="img-fluid pr-2" alt="Metalumen logo">
+                        <div class="itemName mt-2 mb-1">
+                          Intelligent Luminaires
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/metalumen-intelligent.jpg" width="200" class="img-fluid" alt="Metalumen image">
+                      </div>
+                    </div>
+                    <div>
+                      Metalumen offers intelligent standalone luminaires with integrated occupancy and/or daylight harvesting capabilities. Standalone luminaires offer independent control based on integrated sensors&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 3-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="http://arancialighting.com/project/drum-surface/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/arancia-logo.png" width="85" class="img-fluid pr-2" alt="Arancia logo">
+                        <div class="itemName mt-2">
+                          Drum
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/arancia-drum-c82.png" width="294" class="img-fluid" alt="Arancia Drum fixture">
+                      </div>
+                    </div>
+                    <div>
+                      This direct and bright luminaire is available in three different sizes and offers many color combinations. Bent extruded shade and spinned reflector made of 6061-T6 aluminum&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 4-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://www.hubbell.com/architecturalarealighting/en/Products/Lighting-Controls/Commercial-Outdoor-Lighting/Area-Site-Roadway/Flex/p/220804" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/aal.png" width="136" class="img-fluid pr-2" alt="Architectural Area Lighting logo">
+                        <div class="itemName mt-4">
+                          Flex
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/aal-flex.jpg" width="224" class="img-fluid" alt="Architectural Area Lighting Flex fixture">
+                      </div>
+                    </div>
+                    <div>
+                      Timeless Sleek contemporary styling that will stand the test of time. Multiple arm designs and mounting options, including single, twin,&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 5-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://products.gecurrent.com/indoor-lighting/disinfection/lbu-series" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/GEcurrent-fixtures.jpg" width="146" class="img-fluid pr-2" alt="GE Current logo logo">
+                        <div class="itemName mt-4">
+                          365DisInFx LBU
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/ge-365DisInFx-LBU.jpg" width="214" class="img-fluid" alt="GE Current LBU fixture">
+                      </div>
+                    </div>
+                    <div>
+                      365DisInFx™ UVC technology provides 99% inactivation with less than 6 hours of exposure for seasonal coronaviruses, including SARS-CoV-2, the virus that is known to cause COVID-19&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 6-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://www.hubbell.com/kimlighting/en/Products/Lighting-Controls/Lighting-Controls-Sensors/Pharos/Pharos/p/7277334" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/kim.png" width="95" class="img-fluid pr-2" alt="Kim Lighting logo">
+                        <div class="itemName mt-xl-3 mt-2">
+                          Lighting Controls
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/kim-dmx-controls.png" width="160" class="img-fluid" alt="Kim Lighting DMX controls">
+                      </div>
+                    </div>
+                    <div>
+                      Allows for individually controlling and independently running timeline and scenes. Users can build dynamic, precise, fully customizable lighting effects. Real-time manual overrides&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 7-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://www.hubbell.com/hubbelllightingci/en/spectraclean-254" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/columbia.jpg" width="136" class="img-fluid pr-2" alt="Columbia Lighting logo">
+                        <div class="itemName mt-3 mt-lg-4">
+                          Spectraclean 254
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/columbia-spectraclean254.jpg" width="170" class="img-fluid" alt="Columbia Spectraclean fixture">
+                      </div>
+                    </div>
+                    <div>
+                      New SpectraClean™ 254 germicidal lighting solutions are fast, effective and indiscriminate for disinfecting bacteria and inactivating viruses like SARS-CoV-2 (Coronavirus) and Influenza (Flu)&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 8-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://products.gecurrent.com/indoor-lighting/disinfection/lbu-series" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/emergi-lite.png" width="150" class="img-fluid pr-2" alt="Emergi-Lite logo">
+                        <div class="itemName mt-2 mt-lg-4">
+                          CM Edge
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/emergilite-CM-Edge.jpg" width="160" class="img-fluid" alt="Emergi-Lite CM Edge fixture">
+                      </div>
+                    </div>
+                    <div>
+                      Aluminum frame and polycarbonate panels illuminated by high efficiency LEDs. Universal side, wall and ceiling mount. Universal single and double face. 3 pictogram panels&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 9-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="http://www.metalumen.com/bios/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/metalumen-v.png" width="136" class="img-fluid pr-2" alt="Kim Lighting logo">
+                        <div class="itemName mt-xl-3 mt-2">
+                          BIOS Skyblue
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/metalumen-bios.jpg" width="200" class="img-fluid" alt="Kim Lighting DMX controls">
+                      </div>
+                    </div>
+                    <div>
+                      Metalumen indoor lighting with BIOS® technology offers healthy lighting solutions that bring the benefits of sunlight indoors. BIOS SkyBlue® provides the right “blue sky” spectrum of light&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
-	<div class="divider_line grad1">
-	</div>
+              <!--Slide 10-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://products.gecurrent.com/led-lamps-and-modules/led-hazardous-location-lamps" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/home/featured-items/GEcurrent-lamps.jpg" width="138" class="img-fluid pr-2" alt="GE Current Lamps">
+                        <div class="itemName mt-3 mt-lg-4">
+                          Hazardous Location Lamps
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/GE-hazardous-lamp.jpg" width="65" class="img-fluid" alt="GE Current Hazardous Lamp">
+                      </div>
+                    </div>
+                    <div>
+                      Our new Type B LED HID replacement lamps, suited for Hazardous locations, feature ANSI ED17 shape and are offered in 21, 35 and 45 watts. &hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
-	<script type="text/javascript">writeFile("global-html/GSALfooter.html")</script>
-	
-<!-- Start of StatCounter Code for Default Guide -->
-	<script type="text/javascript">
-	var sc_project=10791629; 
-	var sc_invisible=1; 
-	var sc_security="4e7fab24"; 
-	var scJsHost = (("https:" == document.location.protocol) ?
-	"https://secure." : "http://www.");
-	document.write("<sc"+"ript type='text/javascript' src='" +
-	scJsHost+
-	"statcounter.com/counter/counter.js'></"+"script>");
-	</script>
-	<noscript><div class="statcounter"><a title="website
-	statistics" href="http://statcounter.com/"
-	target="_blank"><img class="statcounter"
-	src="http://c.statcounter.com/10791629/0/4e7fab24/1/"
-	alt="website statistics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-</body>
+              <!--Slide 11-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://www.lumca.com/wp-content/uploads/2018/01/Luuma_X_Fog_Brochure_EN.pdf" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/global/logo-banner/lumca.png" width="150" class="img-fluid pr-2" alt="Lumca Lighting logo">
+                        <div class="itemName mt-2 mt-lg-4">
+                          Luuma X Fog LU-AR
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/lumca-lu-ar.jpg" width="130" class="img-fluid" alt="Lumca Luuma LU-AR fixture">
+                      </div>
+                    </div>
+                    <div>
+                      Combining both theatrical fog eff ects and a new way for outdoor cooling, Luuma X Fog is ideal for urban parks, botanical gardens and other recreational areas&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <!--Slide 12-->
+              <div class="carousel-item">
+                <div class="feature-mobile">
+                  <a href="https://www.spilighting.com/Family/novato-lines-and-arcs/" target="_blank">
+                    <div class="d-flex justify-content-between featuredHeader">
+                      <div>
+                        <img src="images/global/logo-banner/spi-lighting.jpg" width="140" class="img-fluid pr-2" alt="SPI Lighting logo">
+                        <div class="itemName mt-xl-3 mt-2">
+                          Novato Lines &plus; Arcs
+                        </div>
+                      </div>
+                      <div>
+                        <img src="images/home/featured-items/SPI-novato-lines.jpg" width="180" class="img-fluid" alt="SPI Novato Lines and Arcs">
+                      </div>
+                    </div>
+                    <div>
+                      These architectural building blocks are fundamental design tools that enable endless expression of your lighting ideas to meet specific customer requirements.&hellip;<span> More Info</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          
+            </div>
+            <a class="carousel-control-prev featured-controls" href="#featuredItemsSlider-mobile" role="button" data-slide="prev">
+              <span class="featured-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next featured-controls" href="#featuredItemsSlider-mobile" role="button" data-slide="next">
+              <span class="featured-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--End of Featured Slider Mobile-->
+    </div>
+    <!--End of Featured Slider Section-->
+
+      <!-- GSLG Company Info -->
+    <div class="container-fluid pt-4 pb-2 bg-grey mt-36 mb-0">
+      <div class="container p-xl-0">
+        <div class="row d-flex align-items-center text-justify pb-1">
+          <div class="col-12 col-lg-7">
+            <img src="images/home/GS-offices.png" class="img-fluid" alt="Gross Sales Office">
+          </div>
+          <div class="col-12 col-lg-5 mt-3 mt-lg-0 display-text">
+            <div>
+              GS Lighting Group <span>Design Centre</span>
+            </div>
+            <p>
+              For over 30 years GS Lighting Group has been a leading lighting service company representing the highest quality lighting manufacturers for the design, engineering, distribution and contracting communities. We are committed to providing our customers with unparalleled support and the best possible level of service in our pursuit of business excellence.
+            <p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container p-xl-0 mt-36">
+      <!-- Prodict Literature, Notices -->
+      <div class="row mb-36">
+        <div class="col-12 col-lg-4 pr-lg-0">
+          <div class="row literature mx-0 mt-0">
+            <div class="literature-title">
+              PRODUCT LITERATURE
+            </div>
+            <div class="col pr-2">
+              <a href="https://online.fliphtml5.com/eshq/ymmn" target="_blank">
+                <img src="images/home/ge-lamps-guide-june.jpg" class="img-fluid" alt="GE Lamp & Ballast Guide">
+              </a>
+              <div class="d-block mt-sm-1 mt-xl-0">
+                GE Lamp &amp; Ballast Guide
+              </div>
+            </div>
+            <div class="col pl-2">
+              <a href="https://online.fliphtml5.com/eshq/tqdo" target="_blank">
+                <img src="images/home/product-guide-cover-nov.jpg" class="img-fluid" alt="GS Lighting Group LED Product Guide">
+              </a>
+              <div class="d-block mt-sm-1 mt-xl-0">
+                LED Product Guide
+              </div>
+            </div>
+            <div class="col-12 py-2 mt-2">
+              <a href="images/home/GS-Downloadable-LineCard-Sept-2021.pdf" target="_blank">
+                Printable Line Card
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+          <div class="row">
+            <div class="col">
+              <div class="notice px-1">
+                <span>Welcome to our new website design!</span>&ensp;<br>We are updating our entire website to better serve you. Stay tuned for new features and robust mobile responsiveness for all pages as we complete this process.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <div class="d-flex justify-content-center contact-icons">
+                  <a href="mailto:sales@gslightinggroup.ca">
+                    <img src="images/home/mail-icon.svg"><br>
+                    <div class="icon-labels mt-2">
+                      GENERAL ENQUIRIES
+                    </div>
+                  </a>
+                  <a href="mailto:quotations@gslightinggroup.ca">
+                    <img src="images/home/quote-icon.svg"><br>
+                    <div class="icon-labels mt-2">
+                      QUOTATION REQUEST
+                    </div>
+                  </a>
+                  <a href="mailto:orders@gslightinggroup.ca">
+                    <img src="images/home/order-icon.svg"><br>
+                    <div class="icon-labels mt-2">
+                      ORDER ENQUIRIES
+                    </div>
+                  </a>
+                </div>
+                <div class="mt-3">
+                  <p>Order all your GE replacement lamp and ballast supplies through our <span>GE Lamps Division.</span></p>
+                  GE Current Lamps and Ballast: <a href="mailto:gelamps@gslightinggroup.ca">gelamps@gslightinggroup.ca</a> or call:<br>
+                  <a tabIndex="-1" href="tel:1-833-435-2677">1-833-GE-LAMPS</a> or <a tabIndex="-1" class="text-nowrap" href="tel:1-833-435-2677">1-833-435-2677</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Banner-->
+	  <script>writeFile("logo-banner.html")</script>
+
+    <!--Social Media Icons-->
+    <div class="container">
+      <div class="row">
+        <div class="col d-block d-sm-flex justify-content-center media-icons">
+          <a href="https://www.bnnbloomberg.ca/" target="_blank">
+            <img src="images/home/media-icons/bnn.svg" class="img-fluid">
+          </a>
+          <a href="https://edisonreport.com/" target="_blank">
+            <img src="images/home/media-icons/edison-report.svg" class="img-fluid">
+          </a>
+          <a href="https://www.cnn.com/" target="_blank">
+            <img src="images/home/media-icons/cnn.svg" class="img-fluid">
+          </a>
+          <div class="circle dot">
+          </div>
+          <a href="https://www.facebook.com/GS-Lighting-Controls-100861641889420" target="_blank">
+            <img src="images/home/media-icons/facebook.svg" class="img-fluid" >
+          </a>
+          <a href="https://www.linkedin.com/company/gross-sales-ltd-" target="_blank">
+            <img src="images/home/media-icons/linkedin.svg" class="img-fluid">
+          </a>
+          <a href="https://www.instagram.com/gs_lightinggroup/" target="_blank">
+            <img src="images/home/media-icons/instagram.svg" class="img-fluid">
+          </a>
+          <a href="https://www.pinterest.ca/gslightinggroup/_saved/" target="_blank">
+            <img src="images/home/media-icons/pinterest.svg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!--Footer-->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col">
+          <div class="slogan">
+            Serving Ontario's lighting market for over <span>30 years.</span>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="office-addr">
+            GS Lighting Group Design Centre<br>26 Glebe Street, Cambridge, Ontario <span>N1S 1P1</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright pt-1 pb-2">
+          © 2021 Gross Sales ltd.
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+        var now = new Date();
+        var start = new Date(now.getFullYear(), 0, 0);
+        var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+        var oneDay = 1000 * 60 * 60 * 24;
+        var day = Math.floor(diff / oneDay);
+  
+        var imageList = $('.carousel-item.homeSlide');
+        var indicators = $('.carousel-indicators li');
+        var firstImage = day % imageList.length;
+
+        $(indicators.get(firstImage)).addClass('active');
+        $(imageList.get(firstImage)).addClass('active');
+      });
+    </script>
+    
+    <!-- Default Statcounter code for GS Lighting Group 2021 https://gslightinggroup.ca/ -->
+    <script type="text/javascript">
+      var sc_project=12497424; 
+      var sc_invisible=1; 
+      var sc_security="dd56cbca"; 
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async>
+    </script>
+    <noscript>
+      <div class="statcounter">
+        <a title="free hit counter" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/12497424/0/dd56cbca/1/" alt="free hit counter">
+        </a>
+      </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+
+  </body>
 </html>

@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <title>GS Lighting Group | LED Lighting & Controls</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A leading lighting service company in Ontario, representing select manufacturers specializing in LED lighting products for any professional application.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="LC-Lightbox/js/lc_lightbox.lite.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="LC-Lightbox/css/lc_lightbox.css" />
+    <link rel="stylesheet" href="LC-Lightbox/skins/dark.css" />
+    <script src="LC-Lightbox/lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
+    <script src="scripts/openfile.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid fixed-top header">
+      <div class="row">
+        <div class="col text-center logo-flex">
+          <img class="medallion above-logo" src="images/global/Celebrating30Years-medallion.png">
+          <img class="logo" src="images/global/GSheader-logo.svg">
+          <img class="medallion" src="images/global/Celebrating30Years-medallion.png">
+        </div>
+        <div class="col px-0 nav-glow">
+          <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="images/global/menu-icon.svg">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Company<span class="sr-only">(current)</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="about-us.html">About Us</a>
+                    <a class="dropdown-item" href="team.html">Meet The Team</a>
+                    <a class="dropdown-item" href="services.html">Services</a>
+                    <a class="dropdown-item" href="trending.html">#Trending</a>
+                  </div>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="line-card.html">Line Card</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="retrofit.html">Retrofit</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2 active">
+                  <a class="nav-link" href="inspiration.html">Inspiration</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item mr-xl-5 mr-lg-4 mr-md-2">
+                  <a class="nav-link" href="design-eCats.html">Design eCats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Title-->
+    <div class="container-fluid bg-blue">
+      <div class="container">
+        <div class="row d-flex title-block">
+          <div class="col-12 text-center pb-4 mb-1">
+            <h1>INSPIRATION</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--LC-Lightbox Settings-->
+    <!--gets the Gallery html file and writes it to the element with the id "content". Allows interchangeable galleries.-->
+    <script type="text/javascript">
+      function openGallery(galleryFile) {
+        writeFileToRemoteTarget(galleryFile, 'content');
+        
+      // Loads requested gallery elements into var map inside the id="content" div. 
+      var gallery = document.querySelector('#content');
+      var map = {};
+
+      // Remove data-after and save and hold them 
+      var filteredList = [...gallery.children].filter(function (el) {
+        var pairValue = el.getAttribute("data-after");
+        if (pairValue) {
+          map[pairValue] = el;
+          return false;
+        }
+        return true
+      })
+
+      // Clear contents of gallery
+      gallery.innerHTML = '';
+
+      // Randomize the list (in memory map) with data-after removed
+      var randomList = filteredList
+        .map((a) => ({sort: Math.random(), value: a}))
+        .sort((a, b) => a.sort - b.sort)
+        .map((a) => a.value)
+
+      // Add the items back into gallery in random order
+      // Check each list item for data-before against saved data-after files. 
+      // If data-after was removed add it back in next (after) to data-before
+      randomList.forEach(function (el) {
+        gallery.appendChild(el)
+        var pairValue = el.getAttribute("data-before");
+        if (pairValue) {
+          gallery.appendChild(map[pairValue]);
+        }
+      })
+
+        lc_lightbox('.elem', {
+          wrap_class: 'lcl_fade_oc',
+          gallery : true,
+          thumb_attr: 'data-lcl-thumb', 
+          skin: 'dark',
+          radius: 0,
+          padding: 0,
+          border_w: 1,
+          border_col: '#666',
+          fullscreen: true,
+          slideshow_time: 5000,
+          download: true,
+          autoplay: true,
+          ol_opacity: 0.9,
+          ol_color:'#000',
+          fading_time: 400,
+          thumbs_w: 150,
+          thumbs_h: 100,
+          max_height:'98%',
+        });
+
+        document.querySelector('.elem').click();
+      }
+    </script>
+    <div id="content" style="display: none">
+    </div>
+
+    <!-- Inspiration gallery selectors -->
+    <div class="container">
+      <div class="row">
+        <div class="col mt-2 text-center">
+          &lowast; This page is currently being updated; active galleries are indicated below in black. Stay tuned for new galleries, and thank you for your patience. &lowast;
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-6 indoor-outdoor r-border">
+          INDOOR GALLERIES
+        </div>
+        <div class="col-6 indoor-outdoor l-border">
+          OUTDOOR GALLERIES
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="row justify-content-center">
+            <div class="col p-0 d-flex d-md-block">
+              <ul class="galleries">
+                <li onclick="openGallery('images/inspiration/indoor/athletic/athletic.html')">
+                  <span>Athletic</span>
+                </li>
+                <li onclick="openGallery('images/inspiration/indoor/acoustic/acoustic.html')">
+                  <span>Acoustic</span>
+                </li>
+                <div class="btn-group dropright">
+                  <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      Ceiling
+                      <div class="dropdown-symbol">
+                      </div>
+                    </span>
+                  </li>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/ceiling/ceiling-commercial/ceiling-commercial.html')">
+                      Commercial
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/ceiling/ceiling-residential/ceiling-residential.html')">
+                      Residential
+                    </div>
+                  </div>
+                </div>
+                <li onclick="openGallery('images/inspiration/indoor/cylinder/cylinder.html')">
+                  <span>
+                    Cylinder
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/downlights/downlights.html')">
+                    Downlights
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/education/education.html')">
+                    Education
+                  </span>
+                </li>
+                <li>
+                  <span class="not-active">EL Technology</span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/fans/fans.html')">
+                    Fans
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/healthcare/healthcare.html')">
+                    Healthcare
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/horticulture/horticulture.html')">
+                    Horticulture
+                  </span>
+                </li>
+                <div class="btn-group dropright">
+                  <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      Industrial
+                      <div class="dropdown-symbol">
+                      </div>
+                    </span>
+                  </li>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/industrial/high-low-bay/high-low-bay.html')">
+                      High&sol;Low Bay
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/industrial/harsh/harsh.html')">
+                      Harsh Environment
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group dropright">
+                  <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      Linear
+                      <div class="dropdown-symbol">
+                      </div>
+                    </span>
+                  </li>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/linear/recessed/recessed.html')">
+                      Recessed
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/linear/suspended/suspended.html')">
+                      Suspended
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/linear/surface/surface.html')">
+                      Surface
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/linear/cove/cove.html')">
+                      Cove
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-group dropright">
+                  <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      Pendant
+                      <div class="dropdown-symbol">
+                      </div>
+                    </span>
+                  </li>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/pendant/commercial/commercial.html')">
+                      Commercial
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/pendant/residential/residential.html')">
+                      Residential
+                    </div>
+                  </div>
+                </div>
+                <li>
+                  <span class="not-active">Retrofit</span>
+                </li>
+                <li>
+                  <span class="not-active">RGB</span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/tape-rope/tape-rope.html')">
+                    Tape &amp; Rope
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/track/track.html')">
+                    Track
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/indoor/troffer/troffer.html')">
+                    Troffer
+                  </span>
+                </li>
+                <div class="btn-group dropright">
+                  <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      Wall
+                      <div class="dropdown-symbol">
+                      </div>
+                    </span>
+                  </li>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/wall/wall-commercial/wall-commercial.html')">
+                      Commercial
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/indoor/wall/wall-residential/wall-residential.html')">
+                      Residential
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row pl-xl-3 pl-lg-2 justify-content-center">
+            <div class="col p-0 d-flex d-md-block">
+              <ul class="galleries">
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/area-post-top/area-post-top.html')">
+                    Area &amp; Post Top
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/bollards/bollards.html')">
+                    Bollards
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/flood/flood.html')">
+                    Floodlight
+                  </span>
+                </li>
+                <li>
+                  <span class="not-active">Furniture</span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/garage-canopy/garage-canopy.html')">
+                    Garage &amp; Canopy
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/landscape/landscape.html')">
+                    Landscape
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/linear/linear.html')">
+                    Linear
+                  </span>
+                </li>
+                <li>
+                  <span class="not-active">RGB</span>
+                </li>
+                <li>
+                  <span class="not-active">Solar &amp; Daylighting</span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/sports/sports.html')">
+                    Sports Lighting
+                  </span>
+                </li>
+                <li>
+                  <span onclick="openGallery('images/inspiration/outdoor/tape/tape.html')">
+                    Tape & Rope
+                  </span>
+                </li>
+                <div class="btn-group dropright">
+                  <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Wall
+                      <div class="dropdown-symbol">
+                      </div>
+                    </span>
+                  </li>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/outdoor/wall/commercial/commercial.html')">
+                      Commercial
+                    </div>
+                    <div class="dropdown-item" onclick="openGallery('images/inspiration/outdoor/wall/residential/residential.html')">
+                      Residential
+                    </div>
+                  </div>
+                </div>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col px-0 indoor-outdoor mb-1">
+          <div>
+            FEATURED PROJECTS
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-0">
+          <div id="projectsCarouselIndicators" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="4000">
+            <ol class="d-flex align-items-center carousel-indicators projects">
+              <li data-target="#projectsCarouselIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#projectsCarouselIndicators" data-slide-to="1"></li>
+              <li data-target="#projectsCarouselIndicators" data-slide-to="2"></li>
+              <li data-target="#projectsCarouselIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item project-slider active">
+                <div class="d-flex align-items-center justify-content-center info-spot">
+                  <div>
+                    Public Health<br>
+                    <span>Wellington Dufferin Guelph<span>
+                    <div class="details">
+                      <!--Add some fixture information here-->
+                    </div>
+                  </div>
+                </div>
+                <img src="images/inspiration/featured-projects/example/guelph_health_centre-1140.jpg" class="img-fluid" alt="Guelph Health Centre">
+              </div>
+              <div class="carousel-item project-slider">
+                <div class="d-flex align-items-center justify-content-center info-spot">
+                  <div>
+                    Norwich Administration Building<br>
+                    <div class="details">
+                      <!--Add some fixture information here-->
+                    </div>
+                  </div>
+                </div>
+                <img src="images/inspiration/featured-projects/example/norwich_administration_building-1140.jpg" class="img-fluid" alt="Norwich Administration Building">
+              </div>
+              <div class="carousel-item project-slider">
+                <div class="d-flex align-items-center justify-content-center info-spot">
+                  <div>
+                    Hamilton District School Board<br>
+                    <div class="details">
+                      <!--Add some fixture information here-->
+                    </div>
+                  </div>
+                </div>
+                <img src="images/inspiration/featured-projects/example/hamilton-dsb-1140.jpg" class="img-fluid" alt="Hamilton District School Board">
+              </div>
+              <div class="carousel-item project-slider">
+                <div class="d-flex align-items-center justify-content-center info-spot">
+                  <div>
+                    Kitchener Waterloo Collegiate<br>
+                    <div class="details">
+                      <!--Add some fixture information here-->
+                    </div>
+                  </div>
+                </div>
+                <img src="images/inspiration/featured-projects/example/kitchener-waterloo_collegiate-1140.jpg" class="img-fluid" alt="Kitchener Waterloo Collegiate">
+              </div>
+              <a class="carousel-control-prev projects-controls-prev" href="#projectsCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next projects-controls-next" href="#projectsCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container mt-36">
+      <div class="row bb">
+      </div>
+    </div>
+
+    <!-- Logo Banner-->
+	  <script>writeFile("logo-banner.html")</script>
+
+    <!--Social Media Icons-->
+    <div class="container">
+      <div class="row">
+        <div class="col d-block d-sm-flex justify-content-center media-icons">
+          <a href="https://www.bnnbloomberg.ca/" target="_blank">
+            <img src="images/home/media-icons/bnn.svg" class="img-fluid">
+          </a>
+          <a href="https://edisonreport.com/" target="_blank">
+            <img src="images/home/media-icons/edison-report.svg" class="img-fluid">
+          </a>
+          <a href="https://www.cnn.com/" target="_blank">
+            <img src="images/home/media-icons/cnn.svg" class="img-fluid">
+          </a>
+          <div class="circle dot">
+          </div>
+          <a href="https://www.facebook.com/GS-Lighting-Controls-100861641889420" target="_blank">
+            <img src="images/home/media-icons/facebook.svg" class="img-fluid" >
+          </a>
+          <a href="https://www.linkedin.com/company/gross-sales-ltd-" target="_blank">
+            <img src="images/home/media-icons/linkedin.svg" class="img-fluid">
+          </a>
+          <a href="https://www.instagram.com/gs_lightinggroup/" target="_blank">
+            <img src="images/home/media-icons/instagram.svg" class="img-fluid">
+          </a>
+          <a href="https://www.pinterest.ca/gslightinggroup/_saved/" target="_blank">
+            <img src="images/home/media-icons/pinterest.svg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!--Footer-->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col">
+          <div class="slogan">
+            Serving Ontario's lighting market for over <span>30 years.</span>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="office-addr">
+            GS Lighting Group Design Centre<br>26 Glebe Street, Cambridge, Ontario <span>N1S 1P1</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright pt-1 pb-2">
+          © 2021 Gross Sales ltd.
+        </div>
+      </div>
+    </div>
+    
+    <!--Bootstrap Scripts-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    
+    <!-- Default Statcounter code for GS Lighting Group 2021 https://gslightinggroup.ca/ -->
+    <script type="text/javascript">
+      var sc_project=12497424; 
+      var sc_invisible=1; 
+      var sc_security="dd56cbca"; 
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async>
+    </script>
+    <noscript>
+      <div class="statcounter">
+        <a title="free hit counter" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/12497424/0/dd56cbca/1/" alt="free hit counter">
+        </a>
+      </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+
+  </body>
+</html>

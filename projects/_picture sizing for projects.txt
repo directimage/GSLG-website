@@ -1,4 +1,0 @@
-Picture sizing for projects:
-
-maximum height: 470px
-maximim width: 725px
